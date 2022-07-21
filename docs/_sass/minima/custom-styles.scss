@@ -1,0 +1,212 @@
+// Placeholder to allow defining custom styles that override everything else.
+// (Use `_sass/minima/custom-variables.scss` to override variable defaults)
+
+// banner
+*,
+*:before,
+*:after {
+	box-sizing: border-box;
+}
+
+.banner {
+	display: flex;
+	background-color: $primary-main;
+	color: #ffffff;
+	color: white;
+	padding: 30px;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.banner-info {
+	align-self: center;
+	width: 100%;
+}
+
+.banner-post {
+	background-color: #2fb6bc;
+}
+
+.banner-image {
+	height: 40%;
+	width: 40%;
+	float: right;
+	margin: -30px;
+
+	@include media-query($on-palm) {
+		height: 0%;
+		width: 0%;
+	}
+}
+
+//category tags
+
+.category-tag {
+	padding-bottom: 8px;
+	padding-top: 8px;
+	padding-left: 11px;
+	padding-right: 11px;
+	border-width: 1px;
+	border-color: $light-action-disabled;
+	border-radius: 100px;
+	margin-right: 15px;
+	border-style: solid;
+	color: $light-action-disabled;
+}
+
+.tag-container {
+	display: flex;
+	flex-direction: row;
+
+	@include media-query($on-palm) {
+		flex-direction: column;
+		justify-content: space-between;
+	}
+}
+
+.archive-group {
+	margin-bottom: $spacing-unit;
+}
+
+//post-card styling
+
+.post-card {
+	display: flex;
+	flex-direction: row;
+	max-width: 100%;
+	padding: $spacing-unit * 1.5;
+	justify-content: space-between;
+	gap: 44px;
+
+	@include media-query($on-palm) {
+		flex-direction: column;
+		max-width: 100%;
+		gap: 0px;
+		padding: 0px;
+		margin-top: 16px;
+		margin-left: 45px;
+	}
+}
+
+.post-image-container {
+	width: 60%;
+	height: 300px;
+}
+
+.post-image {
+	max-height: 400px;
+	max-width: 100%;
+
+	@include media-query($on-palm) {
+		height: 0%;
+		width: 0%;
+	}
+}
+
+.post-card-details {
+	display: flex;
+	max-width: 400px;
+	flex-direction: column;
+	justify-content: space-between;
+
+	@include media-query($on-palm) {
+		width: 100%;
+	}
+}
+
+.post-card-footer {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	padding-bottom: 8px;
+}
+
+.post-card-left {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	gap: 16px;
+	min-width: 400px;
+
+	@include media-query($on-palm) {
+		max-width: 100%;
+	}
+}
+
+//button styling
+
+.primary-button {
+	padding-bottom: 8px;
+	padding-top: 8px;
+	padding-left: 22px;
+	padding-right: 22px;
+	border-width: 1px;
+	border-color: $primary-main;
+	margin-right: 15px;
+	border-style: solid;
+	color: $primary-main;
+}
+
+.button-link {
+	&:active,
+	&:hover {
+		color: #7939f7;
+	}
+}
+
+//post styling
+
+.post-width {
+	padding: 48px;
+	width: 60%;
+
+	@include media-query($on-palm) {
+		max-width: 100%;
+	}
+}
+
+.post-body {
+	display: flex;
+	flex-direction: row;
+}
+
+// secondary navigation styling
+
+.secondary-navigation {
+	background-color: $light-background;
+	padding: $spacing-unit * 1.5;
+	min-width: 250px;
+	width: 20%;
+}
+
+.secondary-navigation-title {
+	font-weight: 600;
+}
+
+.category-head {
+	font-weight: 600;
+
+	&:active,
+	&:hover {
+		color: #7939f7;
+		text-decoration: none;
+	}
+}
+
+// right column
+
+.right-column {
+	background-color: $background-color;
+	padding: $spacing-unit * 1.5;
+	min-width: 250px;
+	width: 20%;
+}
+
+//home
+
+.home {
+	display: flex;
+	width: 60%;
+	align-items: center;
+	justify-content: center;
+}

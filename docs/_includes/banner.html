@@ -1,0 +1,10 @@
+<div class="banner {% if page.is_post %} banner-post {% endif %}">
+	<div class="banner-info">
+		<h1 class="post-title">{{ page.title | escape }}</h1>
+		<p>{{ page.description | escape }}</p>
+	</div>
+	<img
+		class="banner-image"
+		src="{{site.baseurl}}/assets/images/banner-image.png"
+	/>
+</div>

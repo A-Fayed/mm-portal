@@ -1,0 +1,28 @@
+<li class="post-card">
+	<div class="post-card-left">
+		<div class="post-card-details">
+			<h1>
+				<a class="post-link" href="{{ site.baseurl }}{{ post.url }}">
+					{{ post.title | escape }}
+				</a>
+			</h1>
+			<h3>{{ post.date | date: date_format }}</h3>
+			<h3>{{ post.sub-header | escape }}</h3>
+			<p>{{ post.description | escape }}</p>
+			{%- if site.show_excerpts -%} {{ post.excerpt }} {%- endif -%}
+		</div>
+		<div class="post-card-footer">
+			<a class="button-link" href="{{ site.baseurl }}{{ post.url }}">
+				<span class="primary-button">Read More</span>
+			</a>
+			<div class="tag-cointainer">
+				{%- for category in post.categories -%}
+				<span class="category-tag">{{ category | escape }} </span> {%- endfor
+				-%}
+			</div>
+		</div>
+	</div>
+	<div class="post-image">
+		<img src="{{site.baseurl}}/assets/images/{{ post.image }}" />
+	</div>
+</li>

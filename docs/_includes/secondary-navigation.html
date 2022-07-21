@@ -1,0 +1,17 @@
+<div class="secondary-navigation" id="archives">
+	<a href="{{ site.baseurl }}"><h2 class="secondary-navigation-title">Business Intelligence</h2></a>
+	{% for category in site.categories %}
+	<div class="archive-group">
+		{% capture category_name %}{{ category | first }}{% endcapture %}
+		<div id="#{{ category_name | slugize }}"></div>
+		<a href="{{ site.baseurl }}/{{ category_name }}" class="category-head"
+			>{{ category_name }}</a
+		>
+		<!-- {% for post in site.categories[category_name] %}
+        <article class="archive-item">
+          <h4><a href="{{ site.baseurl }}{{ post.url }}">{{post.title}}</a></h4>
+        </article>
+        {% endfor %} -->
+	</div>
+	{% endfor %}
+</div>
