@@ -1,0 +1,147 @@
+I"�3<h2 id="data-structure-guidelines">Data Structure Guidelines</h2>
+
+<p>It is very import for a Python developer to know which data structure to use and when. In this section we are going to give a quick introduction to the most popular data structures in Python and hashable vs unhashable objects as well as the numpy and pandas libraries.</p>
+
+<p>Do note that because Python is not a strong typed language, data structures can contain multiple different types of objects in them.</p>
+
+<h3 id="mutable-vs-immutable-and-hashable-vs-unhashable">Mutable vs Immutable and Hashable vs Unhashable</h3>
+
+<p>In Python, data structures and objects can either be mutable or immutable and they can be hashable or unhashable.</p>
+
+<p>This is very important since mutable and immutable refer to the ability to modify a given object or not. This property then impacts if an object is hashable or not.</p>
+
+<p>Hashing is the generation of an integer identifier for an object which will never change during the objects lifetime. Typically, immutable objects are hashable while mutable objects are not.</p>
+
+<h3 id="list">List</h3>
+
+<p>A list in Python is a mutable unhashable ordered collection of objects.</p>
+
+<p>Usage Example:</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">list_sample_1</span> <span class="o">=</span> <span class="p">[]</span> <span class="c1"># empty list
+</span>
+<span class="n">list_sample_1</span><span class="p">.</span><span class="n">append</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span> <span class="c1"># adds 1 to the end of the list
+</span>
+<span class="n">list_sample_1</span><span class="p">.</span><span class="n">append</span><span class="p">(</span><span class="s">'a'</span><span class="p">)</span> <span class="c1"># adds 'a' to the end of the list
+</span>
+<span class="k">print</span><span class="p">(</span><span class="n">list_sample_1</span><span class="p">)</span> <span class="c1"># [1, 'a']
+</span>
+<span class="n">list_sample_1</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="mi">2</span>
+
+<span class="k">print</span><span class="p">(</span><span class="n">list_sample_1</span><span class="p">)</span> <span class="c1"># [2, 'a']
+</span></code></pre></div></div>
+
+<p>Lists are good when you want to store a collection of items that can have duplicates and that you would want to order.</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">list_sample_1</span> <span class="o">=</span> <span class="p">[</span><span class="mi">4</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">3</span><span class="p">]</span>
+
+<span class="k">print</span><span class="p">(</span><span class="nb">sorted</span><span class="p">(</span><span class="n">list_sample_1</span><span class="p">))</span> <span class="c1"># [1, 2, 3, 3, 4, 5, 5]
+</span></code></pre></div></div>
+
+<h3 id="tuple">Tuple</h3>
+
+<p>A tuple in Python is an immutable hashable ordered collection of objects. Although, mutable objects within a tuple can be modified.</p>
+
+<p>Usage Example:</p>
+
+<p>Usage Example:</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">tuple_sample_1</span> <span class="o">=</span> <span class="p">()</span> <span class="c1"># empty tuple, can't be changed
+</span>
+<span class="n">tuple_sample_2</span> <span class="o">=</span> <span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">)</span> <span class="c1"># integer tuple
+</span>
+<span class="n">tuple_sample_3</span> <span class="o">=</span> <span class="p">([</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">],</span><span class="s">'[4,5,6]'</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span> <span class="c1"># mixed types tuple
+</span>
+<span class="n">tuple_sample_4</span> <span class="o">=</span> <span class="p">(</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">)</span>
+
+<span class="k">print</span><span class="p">(</span><span class="nb">sorted</span><span class="p">(</span><span class="n">tuple_sample_4</span><span class="p">))</span> <span class="c1"># (2, 3, 3, 4, 5)
+</span>
+<span class="n">tuple_sample_3</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="mi">1</span> <span class="c1"># TypeError: 'tuple' object does not support item assignment
+</span></code></pre></div></div>
+
+<p>You would use a tuple only if working with a collection you don’t want to alter whether in terms of size or content, it doesn’t have an <code class="language-plaintext highlighter-rouge">append</code> function like <code class="language-plaintext highlighter-rouge">List</code> does, and does not support changing values inside of it.</p>
+
+<h3 id="set">Set</h3>
+
+<p>A set in Python is a mutable unhashable non-ordered collection of unique objects that don’t have an index.</p>
+
+<p>Usage Example:</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">set_sample_1</span> <span class="o">=</span> <span class="nb">set</span><span class="p">()</span> <span class="c1"># empty set - pay attention because if you write this: set_sample_1 = {} it considers it as a dictionary
+</span>
+<span class="n">set_sample_1</span><span class="p">.</span><span class="n">add</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span> <span class="c1"># {1}
+</span>
+<span class="n">set_sample_1</span><span class="p">.</span><span class="n">add</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span> <span class="c1"># {1}
+</span>
+<span class="n">set_sample_1</span><span class="p">.</span><span class="n">add</span><span class="p">(</span><span class="s">'a'</span><span class="p">)</span> <span class="c1"># {1, 'a'}
+</span>
+<span class="n">set_sample_1</span><span class="p">.</span><span class="n">pop</span><span class="p">()</span> <span class="c1"># this will remove the last element in the set
+</span>
+<span class="n">set_sample_1</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="mi">2</span> <span class="c1"># TypeError: 'set' object is not subscriptable - you cannot access an element in a set as you would access an element in a list
+</span>
+<span class="n">set_sample_1</span><span class="p">.</span><span class="n">remove</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span> <span class="c1"># {'a'} - removes the element provided as a parameter
+</span></code></pre></div></div>
+
+<p>A handy way of using a set is to get all unique members of a list.</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">list_sample_1</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">6</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">1</span><span class="p">]</span>
+
+<span class="n">unique_set</span> <span class="o">=</span> <span class="nb">set</span><span class="p">(</span><span class="n">list_sample_1</span><span class="p">)</span> <span class="c1"># {1, 2, 3, 4, 5, 6} - you can then turn this back to a list if you so wish to: list(unique_set)
+</span></code></pre></div></div>
+
+<p>As you can see in the prior examples, you would use a set when you want to have a collection of unique objects. It is pseudo-mutable because you can remove / add objects to it but you cannot change the values of the objects that are in it.</p>
+
+<h3 id="dictionary">Dictionary</h3>
+
+<p>A dictionary in Python is a mutable unhashable ordered (if Python version is 3.7 or higher) collection of hashable unique keys and their unique values.</p>
+
+<p>Usage Example:</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">dict_sample_1</span> <span class="o">=</span> <span class="p">{}</span> <span class="c1"># empty dictionary
+</span>
+<span class="n">dict_sample_1</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="mi">1</span> <span class="c1"># {1: 1}
+</span>
+<span class="n">dict_sample_1</span><span class="p">[(</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="s">'c'</span><span class="p">)]</span> <span class="o">=</span> <span class="p">[</span><span class="s">'a'</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">]</span> <span class="c1"># {1: 1, (1, 2, 'c'): ['a', 2, 3]}
+</span>
+<span class="n">dict_sample_1</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="mi">2</span> <span class="c1"># {1:2, (1, 2, 'c'): ['a', 2, 3]}
+</span>
+<span class="n">dict_sample_1</span><span class="p">[[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="s">'c'</span><span class="p">]]</span> <span class="o">=</span> <span class="mi">2</span> <span class="c1"># TypeError: unhashable type: 'list'
+</span></code></pre></div></div>
+
+<p>Dictionaries are very useful in representing complex data, you can also use nested dictionaries if more complexity is needed i.e.:</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">dict_sample_1</span> <span class="o">=</span> <span class="p">{</span><span class="mi">1</span><span class="p">:</span> <span class="p">{</span><span class="mi">1</span><span class="p">:</span> <span class="p">{</span><span class="s">'username'</span><span class="p">:</span><span class="s">'test'</span><span class="p">,</span> <span class="s">'pwd'</span><span class="p">:</span> <span class="s">'secret'</span><span class="p">,</span> <span class="s">'active'</span><span class="p">:</span> <span class="bp">True</span><span class="p">}}}</span>
+</code></pre></div></div>
+
+<p>It is very similar to <a href="https://www.w3schools.com/whatis/whatis_json.asp">JSON syntax</a> and can contain customized objects, tuples etc. which is not supported by JSON.</p>
+
+<h2 id="asynchronous-programming">Asynchronous Programming</h2>
+
+<p>Code tends to be written to run synchronously:</p>
+
+<p>Get a document =&gt; Extract information from it =&gt; Transform it to a model input.</p>
+
+<p>In some cases, when an action does not need the previous actions’ to finish to execute, we can introduce <a href="https://www.outsystems.com/blog/posts/asynchronous-vs-synchronous-programming/">asynchronous</a> code.</p>
+
+<p>As an example, think of a user interface where a user can upload documents to be processed and returned back to the user.</p>
+
+<p>In syncronous programming, this user interface would follow a simple workflow:
+Wait for user input =&gt; Process document =&gt; Return document.</p>
+
+<p>But this would be ineffective since the user interface does not need to wait for the document to finish processing to continue to execute.</p>
+
+<p>In asyncronous programming, the user interface process can run the document processing method as an async method allowing the user interface to continue to execute.</p>
+
+<p>Wait for user input =&gt; async process document…
+Waiting for further input | async document processing…
+Waiting for further input =&gt; 2nd async process document | async document processing…
+waiting for further input | async document processed! | async document 2 processing…
+etc…</p>
+
+<p>Asynchronicity in Python is a bit different than in other programming languages. It can be achieved through different ways, all of which presented in <a href="https://medium.com/velotio-perspectives/an-introduction-to-asynchronous-programming-in-python-af0189a88bbb">this article</a> and some of them described below.</p>
+
+<p><img src="./assets/images/async-py.png" alt="Python Programming Models" title="Python Programming Models" /></p>
+
+<!-- References -->
+
+:ET

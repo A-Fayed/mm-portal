@@ -156,7 +156,7 @@ etc...
 
 Asynchronicity in Python is a bit different than in other programming languages. It can be achieved through different ways, all of which presented in [this article][async-py] and some of them described below.
 
-![Python Programming Models](./assets/images/async-py.png "Python Programming Models")
+![Python Programming Models]({{site.baseurl}}/assets/images/async-py.png "Python Programming Models")
 
 <!-- References -->
 
