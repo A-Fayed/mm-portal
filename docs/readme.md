@@ -1,5 +1,3 @@
-# Setting up 
-
 ## Setting up MDP proof of concept
 
 1. Unzip file and rename 'current-MM-project'
