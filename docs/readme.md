@@ -55,7 +55,7 @@ description: Lorem ipsum dolor sit amet
 
 1. Navigate to current-MM-project/docs/assets/images/
 2. Upload image using 'Add file' button
-3. In the new .md post reference the image in the format ![Image Description]({{site.baseurl}}/assets/images/async-py.png "Image Description")
+3. In the new .md post reference the image in the format `![Image Description]({{site.baseurl}}/assets/images/async-py.png "Image Description")`
 
 ## Activities Backlog 
 
