@@ -8,7 +8,7 @@ This PoC (Proof of Concept) is intended to test:
 ## Useful Links 
 
 1. [Installing-Jekyll]: https://jekyllrb.com/docs/installation/ //
-2. [Jekyll-Github-Documentation]: https://docs.github.com/en/pages/setting-up-a-github-pages-site-with-jekyll //
+2. [Jekyll-Git-Documentation]: https://docs.github.com/en/pages/setting-up-a-github-pages-site-with-jekyll //
 3. [Figma]: https://www.figma.com/file/gMfCqV7jrn49e9aRSOQVdF/Moata-Developer-Portal?node-id=36%3A249 // Designs for this PoC, and ideas for future iterations can be found here 
 
 ## Setting up the PoC & testing locally
