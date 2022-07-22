@@ -4,7 +4,7 @@
 
   <body>
     {%- include header.html -%}
-    {% if page.layout == 'home' %}
+    {% if page.layout == 'home' or page.permalink == '/Design/' or page.permalink == '/UI-UX/' or page.permalink == '/Examples/' or page.permalink == '/Ideas/' %}
     {%- include banner.html -%}
     {%- endif -%}
 
