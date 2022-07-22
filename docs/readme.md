@@ -1,4 +1,11 @@
-## Setting up PoC (Proof of Concept)
+## General Note 
+
+This PoC (Proof of Concept) is intended to test:
+1. The viability and appeal of using Jekyll and Github Pages for MDP
+2. That basic styling and templates can be used to create a more exciting experience for those using MDP
+3. Whether there is an apetite for this type of product (so we can put more resource into taking it further)
+
+## Setting up PoC 
 
 1. Unzip file and rename 'current-MM-project'
 2. Open a new terminal 
