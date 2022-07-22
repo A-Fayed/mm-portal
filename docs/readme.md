@@ -21,7 +21,7 @@ This PoC (Proof of Concept) is intended to test:
 6. Run `bundle exec jekyll serve`
 7. Open relevant server address in browser
 
-## Check repository is working online 
+## Check PoC is working online 
 
 1. Run `git init` from 'current-MM-project' repository
 2. Create a remote git repository called 'current-MM-project' 
