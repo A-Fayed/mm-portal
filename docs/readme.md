@@ -1,5 +1,29 @@
 Setting up 
 
+## Setting up MDP proof of concept
+
+1. Unzip file and name 'current-MM-project'
+2. Open a new terminal 
+3. Navigate to 'current-MM-project' in the terminal
+4. Run `git init`
+5. Create a remote git repository called 'current-MM-project' 
+6. Use `git remote add origin` to link to the newly created remote repository 
+7. Use `git add .`, `git commmit -m "message"` and `git push` to add files to remote repository 
+
+## Test locally 
+
+1. From the directory 'current-MM-project' change into the 'docs' folder
+2. Run `bundle install`
+3. Run `bundle exec jekyll serve`
+4. Open relevant server address in browser
+
+## Check repository is working online 
+
+1. From the remote git repository, click 'Settings'
+2. Click 'Pages' on the left hand sidebar 
+3. Choose 'master' branch and 'docs' under 'Source' 
+4. Visit the published proof of concept at the link provided. 
+
 ## Adding a new .md file 
 
 1. Navigate to current-MM-project/docs/_posts/
@@ -17,3 +41,10 @@ description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiu
 5. Below the frontmatter, add content for your post.
 6. At the bottom of the page, type a short, meaningful commit message that describes the change you made to the file.
 7. Click Commit New File
+
+## Upload images to reference in a new .md file
+
+1. Navigate to current-MM-project/docs/assets/images/
+2. Upload image using 'Add file' button
+3. In the new .md post reference the image in the format ![Image Description]({{site.baseurl}}/assets/images/async-py.png "Image Description")
+
