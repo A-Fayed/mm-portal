@@ -48,6 +48,6 @@ description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiu
 
 ## Activities Backlog 
 
-1. Can we better maintain images and posts?
-2. Can we set up mobile compatability if PoC gains momentum
-3. Can we tidy up CSS so that it is more robust if PoC gains more momentum 
+1. Set up structure to better maintain images and posts?
+2. Set up mobile compatability if PoC gains momentum
+3. Tidy up CSS so that it is more robust if PoC gains more momentum 
