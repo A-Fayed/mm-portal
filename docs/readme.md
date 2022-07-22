@@ -39,13 +39,9 @@ This PoC (Proof of Concept) is intended to test:
 
 ```layout: post  
 title:  "Example Title"  
-
 date:   2022-07-14 11:23:21 +0100  
-
 categories: [Ideas]  
-
 image: post-image.png  
-
 description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
 ```
 
