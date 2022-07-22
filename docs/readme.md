@@ -48,6 +48,8 @@ description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiu
 
 ## Activities Backlog 
 
-1. Set up structure to better maintain images and posts?
-2. Set up mobile compatability if PoC gains momentum
+Feel free to add to this list of simple backlog of activities 
+
+1. Think through how we are storing new markdown files and images so they are maintainable on Github
+2. Make the proof of concept more intuitive by adding smaller details like retain scroll position, media queries
 3. Tidy up CSS so that it is more robust if PoC gains more momentum 
