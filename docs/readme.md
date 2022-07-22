@@ -1,4 +1,4 @@
-## Setting up MDP proof of concept
+## Setting up PoC (Proof of Concept)
 
 1. Unzip file and rename 'current-MM-project'
 2. Open a new terminal 
