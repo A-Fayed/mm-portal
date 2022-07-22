@@ -1,8 +1,8 @@
-Setting up 
+### Setting up 
 
 ## Setting up MDP proof of concept
 
-1. Unzip file and name 'current-MM-project'
+1. Unzip file and rename 'current-MM-project'
 2. Open a new terminal 
 3. Navigate to 'current-MM-project' in the terminal
 4. Run `git init`
@@ -48,3 +48,8 @@ description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiu
 2. Upload image using 'Add file' button
 3. In the new .md post reference the image in the format ![Image Description]({{site.baseurl}}/assets/images/async-py.png "Image Description")
 
+## Activities Backlog 
+
+1. Can we better maintain images and posts?
+2. Can we set up mobile compatability if PoC gains momentum
+3. Can we tidy up CSS so that it is more robust if PoC gains more momentum 
