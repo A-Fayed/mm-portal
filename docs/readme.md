@@ -46,7 +46,8 @@ categories: [Ideas]
 
 image: post-image.png  
 
-description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco```
+description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+```
 
 5. Below the frontmatter, add content for your post.
 6. At the bottom of the page, type a short, meaningful commit message that describes the change you made to the file.
