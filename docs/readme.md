@@ -4,7 +4,7 @@ This PoC (Proof of Concept) is intended to test:
 1. The viability and appeal of using Jekyll and Github Pages for MDP
 2. That basic styling and templates can be used to create a more exciting experience for those using MDP
 3. Whether there is an apetite for this type of product (so we can put more resource into taking it further)
-4. Designs for this PoC, and ideas for future iterations can be acessed here: [Figma]: https://www.figma.com/file/gMfCqV7jrn49e9aRSOQVdF/Moata-Developer-Portal?node-id=36%3A249
+4. Designs for this PoC, and ideas for future iterations can be found here: [Figma]: https://www.figma.com/file/gMfCqV7jrn49e9aRSOQVdF/Moata-Developer-Portal?node-id=36%3A249
 
 ## Setting up PoC 
 
@@ -35,7 +35,7 @@ This PoC (Proof of Concept) is intended to test:
 1. Navigate to current-MM-project/docs/_posts/
 2. Upload or create a new .md file using 'Add file' button 
 3. Name the new post in the format YYYY-MM-DD-NAME-OF-POST.md
-4. Add the following YAML frontmatter to the top of the file
+4. Add the following YAML frontmatter to the top of the file (you can choose from the categories 'Ideas' 'Ui-UX' 'Design' 'Example' and 'Case Studies')
 
 ```layout: post  
 title:  "Example Title"  
@@ -62,3 +62,8 @@ Feel free to add to this list of simple backlog of activities
 1. Think through how we are storing new markdown files and images so they are maintainable on Github
 2. Make the proof of concept more intuitive by adding smaller details like retain scroll position, media queries
 3. Tidy up CSS so that it is more robust if PoC gains more momentum 
+4. Code review - ensuring whatever has been developed is using latest standards/methods
+5. Proficiency rating and associated linking
+6. Pagination
+7. Content from right hand side
+8. Feedback from early adopters
