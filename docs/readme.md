@@ -37,6 +37,12 @@ OR
 - Just use click on this template generate to auto clone this repo into your own github account [MM Dev portal](https://github.com/A-Fayed/mm-portal/generate)
 - Make sure you name the repo " mm-portal " as well 
 
+
+## Publishing on Github Pages
+
+- Go to Settings => Pages => Set the correct branch to deploy from.
+- Or follow these instructions: https://docs.github.com/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site
+
 ## Adding a new .md file 
 
 1. Navigate to current-MM-project/docs/_posts/ in Github
