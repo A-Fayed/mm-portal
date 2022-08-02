@@ -36,6 +36,7 @@ OR
 
 - Just use click on this template generator [MM Dev portal](https://github.com/A-Fayed/mm-portal/generate) to auto clone this repo into your own github account
 - Make sure you name the repo " mm-portal " as well 
+- For setting up your own Template Repo check this link https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-template-repository
 
 
 ## Publishing on Github Pages
