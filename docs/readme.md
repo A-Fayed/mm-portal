@@ -34,7 +34,8 @@ This PoC (Proof of Concept) is intended to test:
 
 OR 
 
-Just use click on this template generate to auto clone this repo into your own github account [MM Dev portal](https://github.com/A-Fayed/mm-portal/generate)
+- Just use click on this template generate to auto clone this repo into your own github account [MM Dev portal](https://github.com/A-Fayed/mm-portal/generate)
+- Make sure you name the repo " mm-portal " as well 
 
 ## Adding a new .md file 
 
