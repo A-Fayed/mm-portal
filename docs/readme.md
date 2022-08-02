@@ -32,6 +32,10 @@ This PoC (Proof of Concept) is intended to test:
 7. Choose 'master' branch and 'docs' under 'Source' 
 8. Visit the published link
 
+OR 
+
+Just use click on this template generate to auto clone this repo into your own github account [MM Dev portal](https://github.com/A-Fayed/mm-portal/generate)
+
 ## Adding a new .md file 
 
 1. Navigate to current-MM-project/docs/_posts/ in Github
